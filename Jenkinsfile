@@ -24,7 +24,7 @@ pipeline {
             steps {
                 sh '''
                     echo "Test Stage"
-                    ls -la build/index.html
+                    test -f build/index.html
                     npm test
                 '''
                 
